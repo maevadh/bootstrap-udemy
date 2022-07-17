@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--- Bootstrap --->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <!--- CSS --->
-     <link rel="stylesheet" href="Design/default.css">
-     <title>Bootstrap - Udemy</title>
-</head>
-<body class="text-light bg-dark">
-     Bienvenue sur mon site
-     <div class="bg-secondary w-50 h-10"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--- Bootstrap v5.2.0--->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!--- CSS --->
+    <link rel="stylesheet" href="Design/default.css" />
+    <title>Bootstrap - Udemy</title>
+  </head>
+
+  <body class="bg-dark">
+    <p class="text-light">Bienvenue sur mon site</p>
+
+    <div>
+     <div class="bg-secondary text-light text-center mx-5 p-3">Hello</div>
+     
+     <div>
+          <h1 class="text-light border border-5 text-center m-5">Maeva Dh</h1>
+     </div>
+    </div>
+    
+    <div class="text-light bg-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime beatae odio voluptates totam officia harum impedit odit optio unde dolor. Pariatur quae magnam porro accusamus architecto delectus similique cupiditate distinctio?</div>
+     <div class="text-light user-select-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quidem corporis suscipit quibusdam enim consequuntur possimus commodi modi iure? Voluptas autem obcaecati saepe unde non velit architecto quae ullam sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse incidunt voluptatem, rem laborum, corporis ipsa doloribus totam quo voluptas non suscipit tempore excepturi sed veritatis sit, animi sequi quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora debitis voluptas asperiores impedit quo, incidunt error dicta consequuntur facilis aspernatur. Quos omnis ut quidem optio dolore incidunt quod commodi? Ex.</div>
+   
+<!-- Rendre une video responsive / ration sur un iframe -->
+
+     <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/sX1Y2JMK6g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>  
+
+    <div class="table-responsive-lg">                                                    // Pour creer un tableau responsive (ex: a partir de lg).
+     <table class=" mt-5 table table-light table-hover table-bordered caption-top">     //caption-top pour le placer en haut du tableau.
+      <caption class="text-light">Cast list</caption>                                   // Mettre une description a mon tableau
+      <thead class="table-secondary">
+        <tr>
+          <th>first name</th>
+          <th>Last name</th>
+          <th>age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Jamie</th>
+          <th>Alexander</th>
+          <th>38 y.o</th>
+        </tr>
+        <tr>
+          <th class="table-primary">Sullivan</th>
+          <th>Stapleton</th>
+          <th>45 y.o</th>
+        </tr>
+        <tr>
+          <th >Ashley</th>
+          <th>Johnson</th>
+          <th>38 y.o</th>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+     
+  </body>
+
 </html>
+     
