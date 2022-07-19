@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--- Bootstrap v5.2.0--->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!--- CSS --->
+    <link rel="stylesheet" href="Design/default.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+      <div class="container">
+        <div class="navbar-brand">Smoosh</div>
+        <!-- Le bouton s'affichera en petit écran -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#monMenuDeroulant"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="monMenuDeroulant">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Créer un carousel -->
+    <div
+      id="monPetitCarrousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <!-- Indicateurs -->
+      <ul class="carousel-indicators">
+        <li
+          data-bs-target="#monPetitCarrousel"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#monPetitCarrousel" data-bs-slide-to="1"></li>
+      </ul>
+
+      <!-- Contenu du carousel -->
+      <div class="carousel-inner">
+        <!-- Premier slide -->
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/04/09/02/09/please-include-your-comments-1317308_640.jpg"
+            class="w-100 d-block"
+            alt="Japon"
+          />
+
+          <!-- Description -->
+          <div class="carousel-caption">
+            <h5>Le printemps arrive !</h5>
+            <p>Les fleurs de cerisiers éclosent dans tout le Japon.</p>
+          </div>
+        </div>
+
+        <!-- Deuxième slide -->
+        <div class="carousel-item">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/28/02/24/japan-2014616_640.jpg"
+            class="w-100 d-block"
+            alt="Japon"
+          />
+
+          <!-- Description -->
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <a
+        class="carousel-control-prev"
+        href="#monPetitCarrousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Précédent</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#monPetitCarrousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">Suivant</span>
+      </a>
+    </div>
+
+                                                  <!-- Dropdown (liste déroulante) -->
+    <div class="dropdown m-3">
+                                        <!-- Bouton -->
+      <button
+        id="monBoutonBleu"
+        class="btn btn-primary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+      >
+        Je suis un menu
+      </button>
+
+                                        <!-- Les éléments du menu -->
+      <ul class="dropdown-menu" aria-labbeledby="monBoutonBleu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+      </ul>
+    </div>
+
+    <!-- Liste déroulant et bouton collés -->
+    <div class="btn-group m-3 dropup">
+      <button type="button" class="btn btn-primary">J'aime</button>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+        data-bs-toggle="dropdown"
+        id="mesOptions"
+      >
+        <span class="sr-only">Options</span>
+      </button>
+      <ul class="dropdown-menu" aria-labbeledby="mesOptions">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Action</a></li>
+      </ul>
+    </div>
+
+    <!-- Modale -->
+    <button
+      type="button"
+      class="btn btn-danger"
+      data-bs-toggle="modal"
+      data-bs-target="#supprimer"
+    >
+      Supprimer mon compte
+    </button>
+
+    <div class="modal fade" id="supprimer" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Header -->
+          <div class="modal-header">
+            <h5 class="modal-title">Supprimer mon compte</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+
+          <!-- Body -->
+          <div class="modal-body">
+            <p class="m-0">Etes-vous sûr de vous ? C'est très dangereux.</p>
+          </div>
+
+          <!-- Footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fermer
+            </button>
+            <button type="button" class="btn btn-danger">Supprimer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Les infobulles-->
+
+    <button
+      type="button"
+      class="btn btn-info"
+      data-bs-toggle="tooltip"
+      data-bs-placement="bottom"
+      title="Ma première infobulle"
+    >
+      Action
+    </button>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+
+    <!-- Les popovers -->
+
+    <button
+      type="button"
+      class="btn btn-secondary"
+      data-bs-toggle="popover"
+      data-bs-placement="bottom"
+      data-bs-content="Fonctionnalité non créée"
+    >
+      Fonctionnalité
+    </button>
+
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+
+    <!-- Les "Scrollspy" 
+ 
+ Pour espionner le scroll des utilisateurs, nous avons besoin d'ajouter l'attribut data-bs-spy et data-bs-target sur la balise body. -->
+
+    <body data-bs-spy="scroll" data-bs-target="#menu"></body>
+    <!-- La cible doit toujours être une balise nav qui utilise la classe navbar. Il
+    ne reste qu'à ajouter vos ancres et Bootstrap gérera tout. -->
+
+    <!-- Les spinners -->
+
+    <!-- Démonstration A -->
+    <div class="spinner-border text-primary">
+      <span class="visually-hidden">Chargement</span>
+    </div>
+
+    <!-- Démonstration B -->
+    <div class="spinner-grow text-primary">
+      <span class="visually-hidden">Chargement</span>
+    </div>
+
+    <!-- Démonstration C -->
+    <button type="button" class="btn btn-primary">
+      Modifier
+      <span class="spinner-border spinner-border-sm"></span>
+    </button>
+
+
+
+    <!-- Dans la grille ci-dessous les deux éléments finissent par être l'un en-dessous de l'autre -->
+    <div class="row mt-5">
+     <div class="col-md-4">
+       <div class="bg-danger p-4"></div>
+     </div>
+     <div class="col-md-4">
+       <div class="bg-info p-4"></div>
+     </div>
+   </div>
+
+   <!-- Dans la grille ci-dessous l'élément prend toute la largeur -->
+   <div class="row">
+     <div class="col-md-4">
+       <div class="bg-secondary p-4"></div>
+     </div>
+   </div>
+
+    <!--- Javascript and dependencies --->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
