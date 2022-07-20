@@ -17,7 +17,6 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-dark bg-dark navbar-expand-md">
       <div class="container">
         <div class="navbar-brand">Smoosh</div>
@@ -107,9 +106,9 @@
       </a>
     </div>
 
-                                                  <!-- Dropdown (liste déroulante) -->
+    <!-- Dropdown (liste déroulante) -->
     <div class="dropdown m-3">
-                                        <!-- Bouton -->
+      <!-- Bouton -->
       <button
         id="monBoutonBleu"
         class="btn btn-primary dropdown-toggle"
@@ -119,7 +118,7 @@
         Je suis un menu
       </button>
 
-                                        <!-- Les éléments du menu -->
+      <!-- Les éléments du menu -->
       <ul class="dropdown-menu" aria-labbeledby="monBoutonBleu">
         <li><a class="dropdown-item" href="#">Action</a></li>
         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -254,24 +253,38 @@
       <span class="spinner-border spinner-border-sm"></span>
     </button>
 
-
-
     <!-- Dans la grille ci-dessous les deux éléments finissent par être l'un en-dessous de l'autre -->
     <div class="row mt-5">
-     <div class="col-md-4">
-       <div class="bg-danger p-4"></div>
-     </div>
-     <div class="col-md-4">
-       <div class="bg-info p-4"></div>
-     </div>
-   </div>
+      <div class="col-md-4">
+        <div class="bg-danger p-4"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-info p-4"></div>
+      </div>
+    </div>
 
-   <!-- Dans la grille ci-dessous l'élément prend toute la largeur -->
-   <div class="row">
-     <div class="col-md-4">
-       <div class="bg-secondary p-4"></div>
-     </div>
-   </div>
+    <!-- Dans la grille ci-dessous l'élément prend toute la largeur -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="bg-secondary p-4"></div>
+      </div>
+    </div>
+
+    <!-- Utiliser Flexbox -->
+
+    <div class="d-flex"></div>
+
+    <!-- Donner une direction -->
+
+    <div class="d-flex flex-row"></div>
+
+    <!--
+       On a également
+       
+       - flex-row-reverse
+       - flex-column
+       - flex-column-reverse
+   -->
 
     <!--- Javascript and dependencies --->
 
